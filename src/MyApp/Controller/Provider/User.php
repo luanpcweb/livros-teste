@@ -14,9 +14,6 @@ class User implements ControllerProviderInterface {
 		$users->put("/{id}", "MyApp\\Controller\\UserController::update");
 		$users->delete("/{id}", "MyApp\\Controller\\UserController::destroy");
 
-		// $users->before(function(){
-		// 	# ...
-		// });
 		return $users;
 	}
 }

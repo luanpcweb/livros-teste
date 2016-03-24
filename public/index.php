@@ -5,6 +5,7 @@ $app = new Silex\Application();
 
 $app['debug'] = true;
 
+include __DIR__ . '/../app/providers.php';
 include __DIR__ . '/../app/routes.php';
 
 $app->run();

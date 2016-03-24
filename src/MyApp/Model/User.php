@@ -5,6 +5,6 @@ class User
 {	
 	public function listar()
 	{
-		#...
+		return "NOME";
 	}
 }

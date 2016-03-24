@@ -6,9 +6,13 @@ namespace MyApp\Controller;
 class UserController
 {
 	
-	function index($app)
+	function index(\Silex\Application $app)
 	{	
-		return $app['twig']->render('home.twig');
+		$user = new \MyApp\Model\User();
+		$result = $user->listar();
+		return $app['twig']->render("home.twig", array(
+				"nome" => $result
+			));
 	}
 
 	function edit($id)
