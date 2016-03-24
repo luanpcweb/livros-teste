@@ -8,8 +8,6 @@ class UserController
 	
 	function index($app)
 	{	
-		// $user = new \MyApp\Model\User();
-		// return $user->listar();
 		return $app['twig']->render('home.twig');
 	}
 
